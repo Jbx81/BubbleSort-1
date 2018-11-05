@@ -4,6 +4,22 @@ function split(array) {
     let secondHalf = array.slice(arrLength / 2, arrLength);
     return [firstHalf, secondHalf];
 }
+
+
+
+function merge(arr1, arr2) {
+    // check index 0 of arr1 with index 0 of arr2
+    // push the lowest value to our final array.
+    let leftPointer = 0;
+    let rightPointer = 0;
+    let resultArray = [];
+
+    if (arr1[leftPointer] < arr2[rightPointer]) {
+        resultArray.push(arr1[leftPointer]);
+        //check if there's another spot available to increment, if so, increment.
+        //if not push the remaining values.(if incremented value is undefined)
+    }
+}
     // debugger;
 
 
